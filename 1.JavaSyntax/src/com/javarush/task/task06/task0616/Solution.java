@@ -8,14 +8,14 @@ public class Solution {
     public static int step;
 
     public static void main(String[] args) {
-        //method1();
+        method1();
     }
 
-    public void method1() {
+    public static void  method1() {
         method2();
     }
 
-    public void method2() {
+    public static void method2() {
         new Solution().method3();
     }
 
