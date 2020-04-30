@@ -23,7 +23,15 @@ public class Solution {
     }
 
     public static void sort(String[] array) {
-        //напишите тут ваш код
+        for (int j = 0; j < (array.length); j++) {
+            for (int l = 0; l < (array.length - 1); l++) {
+                if (isGreaterThan(array[l], array[l+1]) == true){
+                    String temp = array[l];
+                    array[l] = array[l+1];
+                    array[l+1] = temp;
+                }
+            }
+        }
     }
 
     //Метод для сравнения строк: 'а' больше чем 'b'
