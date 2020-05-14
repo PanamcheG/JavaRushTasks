@@ -13,6 +13,13 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String string = reader.readLine();
 
-        //напишите тут ваш код
+        String string1 = string.substring(0, 1).toUpperCase();
+        for (int i = 1; i < string.length(); i++){
+            if ((Character.toString(string.charAt(i - 1)).equals(" ")))
+                string1 += Character.toString(string.charAt(i)).toUpperCase();
+            else
+                string1 += Character.toString(string.charAt(i));
+        }
+        System.out.println(string1);
     }
 }
