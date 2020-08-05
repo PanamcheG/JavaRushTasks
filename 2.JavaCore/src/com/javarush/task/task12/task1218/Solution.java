@@ -1,0 +1,43 @@
+package com.javarush.task.task12.task1218;
+
+/* 
+Есть, летать и двигаться
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+
+    }
+
+    public interface CanFly {
+        public void fly();
+    }
+
+    public interface CanMove {
+        public void move();
+    }
+
+    public interface CanEat {
+        public void eat();
+    }
+
+    public abstract class Dog implements CanMove, CanEat{
+        public abstract void move();
+        public abstract void eat();
+    }
+
+    public abstract class Duck implements CanMove, CanEat, CanFly{
+        public abstract void move();
+        public abstract void eat();
+        public abstract void fly();
+    }
+
+    public abstract class Car implements CanMove{
+        public abstract void move();
+    }
+
+    public abstract class Airplane implements CanMove, CanFly{
+        public abstract void move();
+        public abstract void fly();
+    }
+}
